@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="请求超时..."
+        android:textSize="18sp"
+        android:textColor="@color/grave"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:text="重试"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/llcheck_blue_background"
+        android:layout_height="20dp" />
+</LinearLayout>

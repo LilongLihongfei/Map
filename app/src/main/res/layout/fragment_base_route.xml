@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <com.baidu.mapapi.map.TextureMapView
+        android:id="@+id/map_fragment"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+    <RelativeLayout
+        android:id="@+id/fl_content_fragment"
+        android:layout_width="match_parent"
+        android:background="@drawable/background_selector"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ll_route"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <com.pzhuedu.along.baidu.view.LLRoute
+                app:LLRoute_checked="true"
+                android:id="@+id/llRoute_1"
+                android:layout_width="0dp"
+                app:LLRoute_name="推荐方案"
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+            <com.pzhuedu.along.baidu.view.LLRoute
+                app:LLRoute_name="方案一"
+                android:id="@+id/llRoute_2"
+                android:layout_width="0dp"
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+            <com.pzhuedu.along.baidu.view.LLRoute
+                app:LLRoute_name="方案二"
+                android:id="@+id/llRoute_3"
+                android:layout_width="0dp"
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_below="@id/ll_route"
+            android:layout_marginBottom="4dp"
+            android:background="@color/split_line"
+            android:layout_height="1dp"/>
+        <TextView
+            android:id="@+id/tv_descript"
+            android:layout_below="@+id/ll_route"
+            android:layout_width="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textSize="18sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="准点率中 收费约8元 红绿灯15个 打车约40元"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/bt_start_navi"
+            android:layout_width="match_parent"
+            android:layout_below="@id/tv_descript"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:gravity="center"
+            android:background="@drawable/blue_circle_background"
+            android:layout_height="30dp">
+            <ImageView
+                android:layout_width="26dp"
+                android:src="@drawable/navi_white"
+                android:layout_height="26dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="开始导航"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

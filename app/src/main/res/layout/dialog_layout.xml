@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="180dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_titile"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="出错啦"
+            android:textColor="@color/red"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="match_parent"
+            android:text="网络连接失败"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/split_line"
+            android:layout_marginTop="5dp"
+            android:layout_height="1dp"/>
+        <Button android:id="@+id/bt_confirm"
+            android:background="@drawable/background_selector"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:text="确定"
+            android:layout_height="25dp" />
+    </LinearLayout>
+
+</LinearLayout>

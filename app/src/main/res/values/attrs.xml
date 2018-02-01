@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="Switch">
+        <attr name="checked" format="reference|boolean"/>
+        <attr name="switchOnColor" format="reference|color"/>
+        <attr name="switchOffColor" format="reference|color"/>
+        <attr name="spotOnColor" format="reference|color"/>
+        <attr name="spotOffColor" format="reference|color"/>
+        <attr name="switchOnStrokeColor" format="reference|color"/>
+        <attr name="switchOffStrokeColor" format="reference|color"/>
+        <attr name="spotPadding" format="reference|dimension"/>
+        <attr name="duration" format="reference|integer" />
+    </declare-styleable>
+
+    <declare-styleable name="LLCheck">
+        <attr name="LLCheck_checked" format="reference|boolean"/>
+        <attr name="LLCheck_backgroundColor" format="reference|color"/>
+        <attr name="LLCheck_textColor" format="reference|color"/>
+        <attr name="LLCheck_imageSrc" format="reference|string"/>
+        <attr name="LLCheck_Text" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="LLRoute">
+    <attr name="LLRoute_checked" format="reference|boolean"/>
+    <attr name="LLRoute_name" format="reference|string"/>
+
+    </declare-styleable>
+</resources>

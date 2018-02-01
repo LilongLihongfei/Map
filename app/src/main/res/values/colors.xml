@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="split_line">#ddd</color>
+    <color name="route_fill">#dd016eb7</color>
+    <color name="blue">#dd0048ff</color>
+    <color name="white">#fff</color>
+    <color name="white1">#eee</color>
+    <color name="black">#000</color>
+    <color name="grave">#aaa</color>
+    <color name="red">#ae5454</color>
+    <color name="alpha_background">#accccccc</color>
+    <color name="grave_1">#ccc</color>
+    <color name="glod">#12a70d</color>
+    <color name="transparent">#00000000</color>
+</resources>

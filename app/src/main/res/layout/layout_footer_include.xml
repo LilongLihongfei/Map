@@ -1,0 +1,51 @@
+<LinearLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_footer"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/rectangle_background"
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <include layout="@layout/layout_home_company"/>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/split_line"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_food"
+                style="@style/TextSearch"
+                android:text="美食"
+                />
+            <TextView
+                android:id="@+id/tv_hotel"
+                android:text="酒店"
+                style="@style/TextSearch" />
+            <TextView
+                android:id="@+id/tv_bank"
+                android:text="银行"
+                style="@style/TextSearch" />
+            <TextView
+                android:id="@+id/tv_market"
+                android:text="超市"
+                style="@style/TextSearch"/>
+            <TextView
+                android:id="@+id/tv_more"
+                android:text="更多"
+                style="@style/TextSearch"/>
+        </LinearLayout>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/rectangle_background"
+        android:gravity="center" />
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/ll_strategy1"
+        android:layout_width="match_parent"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_route1_name"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:text="常规路线"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_rout1_time"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:text="56分钟"
+            android:maxLines="1"
+            android:textSize="16sp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_rout1_distance"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:text="31.4公里"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

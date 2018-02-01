@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_height="50dp"
+        android:layout_width="match_parent">
+        <LinearLayout
+            android:id="@+id/ll_back_to_home"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_selector"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/home"
+                android:clickable="false"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="回家"
+                android:textSize="14sp"
+                android:clickable="false"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="20dp"
+                android:src="@drawable/right_arrow"
+                android:clickable="false"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="1dp"
+            android:background="@color/split_line"
+            android:layout_gravity="center"
+            android:layout_height="30dp"/>
+        <LinearLayout
+            android:id="@+id/ll_go_to_work"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:background="@drawable/background_selector"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="20dp"
+                android:src="@drawable/handbag"
+                android:clickable="false"
+                android:layout_marginLeft="20dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="去公司"
+                android:textSize="14sp"
+                android:clickable="false"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="20dp"
+                android:src="@drawable/right_arrow"
+                android:layout_marginLeft="20dp"
+                android:clickable="false"
+                android:layout_height="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

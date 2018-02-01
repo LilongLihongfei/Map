@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_background"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_goback"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/arrow_back" />
+
+        <ImageView
+            android:id="@+id/iv_add_location"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/iv_goback"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/add" />
+
+        <ImageView
+            android:id="@+id/iv_blue_point"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/iv_goback"
+            android:background="@drawable/circle_background" />
+
+        <ImageView
+            android:id="@+id/iv_red_point"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_alignLeft="@id/iv_blue_point"
+            android:layout_marginTop="51dp"
+            android:background="@drawable/red_circle_background" />
+
+        <TextView
+            android:id="@+id/tv_start_location"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="9dp"
+            android:layout_toRightOf="@id/iv_blue_point"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="你的位置"
+             />
+
+        <View
+            android:layout_width="240dp"
+            android:layout_height="1dp"
+            android:layout_alignLeft="@id/iv_blue_point"
+            android:layout_below="@id/tv_start_location"
+            android:layout_marginTop="5dp"
+            android:background="@color/split_line" />
+
+        <TextView
+            android:id="@+id/tv_end_location"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_start_location"
+            android:layout_below="@id/tv_start_location"
+            android:layout_marginTop="13dp"
+            android:text="输入终点" />
+
+        <ImageView
+            android:id="@+id/iv_exchange_point"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="18dp"
+            android:layout_toRightOf="@id/tv_start_location"
+            android:src="@drawable/route_reverse" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/rectangle_background"
+        android:orientation="horizontal">
+
+        <com.pzhuedu.along.baidu.view.LLCheck
+            android:id="@+id/llc_recently"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            app:LLCheck_Text="最近"
+            app:LLCheck_imageSrc="@drawable/time" />
+        <com.pzhuedu.along.baidu.view.LLCheck
+            android:id="@+id/llc_car"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            app:LLCheck_checked="true"
+            app:LLCheck_Text="驾车"
+            app:LLCheck_imageSrc="@drawable/taxi" />
+        <com.pzhuedu.along.baidu.view.LLCheck
+            android:id="@+id/llc_bus"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            app:LLCheck_Text="公交"
+            app:LLCheck_imageSrc="@drawable/bus" />
+        <com.pzhuedu.along.baidu.view.LLCheck
+            android:id="@+id/llc_bike"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            app:LLCheck_Text="骑行"
+            app:LLCheck_imageSrc="@drawable/bike" />
+        <com.pzhuedu.along.baidu.view.LLCheck
+            android:id="@+id/llc_walk"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            app:LLCheck_Text="步行"
+            app:LLCheck_imageSrc="@drawable/walk" />
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
